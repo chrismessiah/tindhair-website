@@ -1,0 +1,132 @@
+.bg
+  // width: 100vw
+  height: 800px
+  background-image: url('/images/bg.jpg')
+  background-position: top
+  background-size: cover
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  flex-direction: column
+  .logo
+    width: 175px
+    height: 50px
+    left: 15px
+    @media screen and (min-width: 400px)
+      width: 230px
+      height: 70px
+      left: 20px
+    background-image: url('/images/logo.svg')
+    background-size: cover
+    background-position: left
+    margin-top: 20px
+    position: relative
+  .subtitle
+    color: #DF4723
+    text-align: center
+    font-size: 18px
+    font-weight: bold
+    margin-top: -10px
+  .phone
+    width: 244px
+    height: 502px
+    background-image: url('/images/phone.png')
+    background-position: center
+    background-size: cover
+    margin-top: 40px
+    margin-bottom: 20px
+    border-radius: 30px
+    box-shadow: 0 2px 15px 0px #000000
+    position: relative
+    z-index: 2
+    video
+      position: absolute
+      top: 56px
+      left: 13px
+      z-index: 4
+    .screen
+      width: 217px
+      height: 387px
+      background-image: url('/images/screen.jpg')
+      background-position: center
+      background-size: cover
+      position: relative
+      top: 56px
+      left: 13px
+      z-index: 3
+  .download-container
+    background-color: rgba(255, 214, 204, 0.6)
+    padding: 10px
+    border-radius: 8px
+    .download-text
+      font-weight: bold
+      font-size: 16px
+      text-align: center
+      margin-top: 0
+    .download-bar
+      width: 100px
+      height: 30px
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      align-items: center
+      *
+        background-size: cover
+        background-position: center
+        @extend .linear-transition
+        &:hover
+          animation-name: pop-animation
+          animation-duration: 0.2s
+          animation-timing-function: linear
+          animation-iteration-count: 1
+      .apple
+        background-image: url('/images/apple.png')
+        width: 26px
+        height: 30px
+      .android
+        background-image: url('/images/android.png')
+        width: 27px
+        height: 30px
+.banner-orange
+  // width: 100vw
+  background-color: #FF6D4A
+  display: flex
+  justify-content: flex-start
+  flex-direction: column
+  align-items: center
+  padding: 40px 0
+  .description-container
+    max-width: 600px
+    margin: 0 20px
+    a
+      color: white
+      text-decoration: underline
+    h2
+      color: white
+      font-size: 20px
+      text-align: center
+      margin-top: 0
+    p
+      color: white
+      font-size: 16px
+      font-weight: 300
+      line-height: 22px
+      margin: 16px 0
+    .bye
+      margin-top: 0
+      margin-bottom: 0
+      font-style: italic
+      font-weight: 400
+
+.footer
+  // width: 100vw
+  height: 70px
+  background-color: #404040
+  display: flex
+  justify-content: center
+  align-items: center
+  p
+    margin: 0
+    color: white
+    font-size: 16px
+    letter-spacing: 2px
